@@ -1,0 +1,6 @@
+framework module Pods_AppYo {
+  umbrella header "Pods-AppYo-umbrella.h"
+
+  export *
+  module * { export * }
+}
