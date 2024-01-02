@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ItemCircleCollectionViewCell" reuseIdentifier="ItemCircleCollectionViewCell" id="gTV-IL-0wX" customClass="ItemCircleCollectionViewCell" customModule="AppYo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="265" height="184"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="265" height="184"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xez-mG-nfE">
+                        <rect key="frame" x="0.0" y="0.0" width="265" height="184"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ao_circle" translatesAutoresizingMaskIntoConstraints="NO" id="uHr-0e-PJ5">
+                                <rect key="frame" x="1" y="1" width="263" height="182"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uHr-0e-PJ5" secondAttribute="trailing" constant="1" id="9WX-Vx-Lm9"/>
+                            <constraint firstAttribute="bottom" secondItem="uHr-0e-PJ5" secondAttribute="bottom" constant="1" id="C8b-qA-N1G"/>
+                            <constraint firstItem="uHr-0e-PJ5" firstAttribute="leading" secondItem="Xez-mG-nfE" secondAttribute="leading" constant="1" id="dNr-is-MVd"/>
+                            <constraint firstItem="uHr-0e-PJ5" firstAttribute="top" secondItem="Xez-mG-nfE" secondAttribute="top" constant="1" id="rNk-Dp-Xbe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Xez-mG-nfE" secondAttribute="bottom" id="Gfj-OR-863"/>
+                <constraint firstItem="Xez-mG-nfE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="PjT-tG-aNe"/>
+                <constraint firstItem="Xez-mG-nfE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Yhg-4u-LWA"/>
+                <constraint firstAttribute="trailing" secondItem="Xez-mG-nfE" secondAttribute="trailing" id="lVk-kd-DRJ"/>
+            </constraints>
+            <size key="customSize" width="380" height="295"/>
+            <connections>
+                <outlet property="imageCircle" destination="uHr-0e-PJ5" id="ZIv-Zz-FQQ"/>
+            </connections>
+            <point key="canvasLocation" x="43.511450381679388" y="-34.507042253521128"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ao_circle" width="90" height="90"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

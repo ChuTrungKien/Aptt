@@ -1,0 +1,627 @@
+[
+    {
+        "id": 1,
+        "collection": [
+            {
+                "id": 1,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 10,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 2,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 20,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 3,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 10,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 4,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 5,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 6,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 7,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "collection": [
+            {
+                "id": 1,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 15,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 2,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 3,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 4,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 15,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 5,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 6,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 15,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 7,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+        ]
+    },
+    {
+        "id": 3,
+        "collection": [
+            {
+                "id": 1,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 2,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 20,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 3,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 20,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 4,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 20,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 5,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 20,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 6,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 20,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 7,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 20,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 8,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 9,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 10,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+        ]
+    },
+    {
+        "id": 4,
+        "collection": [
+            {
+                "id": 1,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 2,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 3,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 4,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 5,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 6,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 7,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 8,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "collection": [
+            {
+                "id": 1,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 2,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 3,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 4,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 5,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 6,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 7,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 8,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 9,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 10,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "collection": [
+            {
+                "id": 1,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 2,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 3,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 4,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 5,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+        ]
+    },
+    {
+        "id": 7,
+        "collection": [
+            {
+                "id": 1,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 2,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 3,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 4,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 5,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 6,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 7,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 8,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 9,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 10,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "collection": [
+            {
+                "id": 1,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 2,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 3,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 4,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 5,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 6,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 7,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            },
+            {
+                "id": 8,
+                "imgStr": "item_Ao",
+                "nameSP": "",
+                "price": 100000,
+                "sale": 0,
+                "numberSale": 0,
+                "rate": 0
+            }
+        ]
+    }
+]

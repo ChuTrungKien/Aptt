@@ -1,0 +1,50 @@
+[
+    {
+        "nameBST": "Áo Công Sở",
+        "banner": "yo_Daidien_AoCongSo",
+        "idList": [1],
+        "id": 1
+    },
+    {
+        "nameBST": "Áo Polo",
+        "banner": "yo_Daidien_AoPolo",
+        "idList": [2],
+        "id": 2
+    },
+    {
+        "nameBST": "Áo Thể Thao",
+        "banner": "yo_Daidien_AoTheThao",
+        "idList": [3],
+        "id": 3
+    },
+    {
+        "nameBST": "Áo Thun",
+        "banner": "yo_Daidien_AoThun",
+        "idList": [4],
+        "id": 4
+    },
+    {
+        "nameBST": "Hàng Bán Chạy",
+        "banner": "yo_Daidien_HangBanChay",
+        "idList": [5],
+        "id": 5
+    },
+    {
+        "nameBST": "Hàng Mới Về",
+        "banner": "yo_Daidien_HangMoiVe",
+        "idList": [6],
+        "id": 6
+    },
+    {
+        "nameBST": "Jeans",
+        "banner": "yo_Daidien_Jeans",
+        "idList": [7],
+        "id": 7
+    },
+    {
+        "nameBST": "Jeans",
+        "banner": "yo_Daidien_Jeans",
+        "idList": [8],
+        "id": 8
+    }
+]
