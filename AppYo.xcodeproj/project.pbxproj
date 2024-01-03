@@ -20,6 +20,7 @@
 		E033D0D52B440B880063C922 /* motBoST.json in Resources */ = {isa = PBXBuildFile; fileRef = E033D0D32B440B880063C922 /* motBoST.json */; };
 		E033D0D92B440B910063C922 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E033D0D72B440B910063C922 /* HomeVC.xib */; };
 		E033D0DA2B440B910063C922 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E033D0D82B440B910063C922 /* HomeVC.swift */; };
+		E033D0DC2B45767F0063C922 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = E033D0DB2B45767F0063C922 /* General.swift */; };
 		E0AB77DD2B3940B70002977C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AB77DC2B3940B70002977C /* AppDelegate.swift */; };
 		E0AB77DF2B3940B70002977C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AB77DE2B3940B70002977C /* SceneDelegate.swift */; };
 		E0AB77E62B3940B70002977C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0AB77E52B3940B70002977C /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		E033D0D32B440B880063C922 /* motBoST.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = motBoST.json; sourceTree = "<group>"; };
 		E033D0D72B440B910063C922 /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		E033D0D82B440B910063C922 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		E033D0DB2B45767F0063C922 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
 		E0AB77D92B3940B70002977C /* AppYo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppYo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0AB77DC2B3940B70002977C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0AB77DE2B3940B70002977C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			children = (
 				E033D0C02B440B610063C922 /* ObjItemClother.swift */,
 				E033D0C12B440B610063C922 /* Utility.swift */,
+				E033D0DB2B45767F0063C922 /* General.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				E033D0C32B440B610063C922 /* Utility.swift in Sources */,
 				E033D0DA2B440B910063C922 /* HomeVC.swift in Sources */,
 				E033D0C22B440B610063C922 /* ObjItemClother.swift in Sources */,
+				E033D0DC2B45767F0063C922 /* General.swift in Sources */,
 				E033D0CF2B440B700063C922 /* ItemCircleCollectionViewCell.swift in Sources */,
 				E0AB77DD2B3940B70002977C /* AppDelegate.swift in Sources */,
 				E033D0CE2B440B700063C922 /* CellHomePreviewTableViewCell.swift in Sources */,
@@ -432,10 +436,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppYo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,10 +464,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppYo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

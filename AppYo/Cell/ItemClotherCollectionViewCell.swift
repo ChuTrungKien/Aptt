@@ -20,6 +20,7 @@ class ItemClotherCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         collectionView.delegate = self
+        collectionView.dataSource = self
         collectionView.register(UINib(nibName: "ItemCircleCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ItemCircleCollectionViewCell")
         setupItemCell()
         setupView()
@@ -51,7 +52,7 @@ extension ItemClotherCollectionViewCell: UICollectionViewDelegate, UICollectionV
         else {
             return UICollectionViewCell()
         }
-        cell.bindData(name: "ao_circle", size: 40)
+        cell.bindData(name: "ao_circle", size: 32)
         cell.onClickClosure = { [weak self] in
             guard let self = self else { return }
         }
@@ -59,8 +60,8 @@ extension ItemClotherCollectionViewCell: UICollectionViewDelegate, UICollectionV
     }
     
     func setupItemCell() {
-        var layoutItem: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layoutItem.minimumLineSpacing = 0
+        let layoutItem: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layoutItem.minimumLineSpacing = 10
         layoutItem.minimumInteritemSpacing = 0
         layoutItem.itemSize = CGSize(width: 40, height: 40)
         layoutItem.scrollDirection = .horizontal

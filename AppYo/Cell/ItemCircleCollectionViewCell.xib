@@ -22,15 +22,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="265" height="184"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ao_circle" translatesAutoresizingMaskIntoConstraints="NO" id="uHr-0e-PJ5">
-                                <rect key="frame" x="1" y="1" width="263" height="182"/>
+                                <rect key="frame" x="112.66666666666669" y="72" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="AWB-AZ-ZZs"/>
+                                    <constraint firstAttribute="width" secondItem="uHr-0e-PJ5" secondAttribute="height" multiplier="1:1" id="e3p-3s-oJc"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="uHr-0e-PJ5" secondAttribute="trailing" constant="1" id="9WX-Vx-Lm9"/>
-                            <constraint firstAttribute="bottom" secondItem="uHr-0e-PJ5" secondAttribute="bottom" constant="1" id="C8b-qA-N1G"/>
-                            <constraint firstItem="uHr-0e-PJ5" firstAttribute="leading" secondItem="Xez-mG-nfE" secondAttribute="leading" constant="1" id="dNr-is-MVd"/>
-                            <constraint firstItem="uHr-0e-PJ5" firstAttribute="top" secondItem="Xez-mG-nfE" secondAttribute="top" constant="1" id="rNk-Dp-Xbe"/>
+                            <constraint firstItem="uHr-0e-PJ5" firstAttribute="centerX" secondItem="Xez-mG-nfE" secondAttribute="centerX" id="88Y-ir-yPw"/>
+                            <constraint firstItem="uHr-0e-PJ5" firstAttribute="centerY" secondItem="Xez-mG-nfE" secondAttribute="centerY" id="H9Z-lv-j2D"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -38,10 +40,10 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="Xez-mG-nfE" secondAttribute="bottom" id="Gfj-OR-863"/>
-                <constraint firstItem="Xez-mG-nfE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="PjT-tG-aNe"/>
-                <constraint firstItem="Xez-mG-nfE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Yhg-4u-LWA"/>
-                <constraint firstAttribute="trailing" secondItem="Xez-mG-nfE" secondAttribute="trailing" id="lVk-kd-DRJ"/>
+                <constraint firstAttribute="bottom" secondItem="Xez-mG-nfE" secondAttribute="bottom" id="DT6-wC-7GO"/>
+                <constraint firstItem="Xez-mG-nfE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cq0-2L-8gs"/>
+                <constraint firstItem="Xez-mG-nfE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="d3u-gb-Dp7"/>
+                <constraint firstAttribute="trailing" secondItem="Xez-mG-nfE" secondAttribute="trailing" id="o4L-Yl-3EV"/>
             </constraints>
             <size key="customSize" width="380" height="295"/>
             <connections>

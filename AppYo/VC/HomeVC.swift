@@ -42,8 +42,11 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
                 self.obj = it
             }
         }
-        
         cell.bindData(obj_1: item, obj_2: obj)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return (210 + (SCREEN_WIDTH*17)/18)
     }
 }

@@ -8,6 +8,9 @@
 import Foundation
 import ObjectMapper
 
+let SCREEN_WIDTH: CGFloat = UIScreen.main.bounds.width
+let SCREEN_HEIGHT: CGFloat = UIScreen.main.bounds.height
+
 public class Utility {
     static func getListBoItemClother() -> [ObjMotItemClother] {
         if let path = Bundle.main.url(forResource: "motItemClother", withExtension: "json") {

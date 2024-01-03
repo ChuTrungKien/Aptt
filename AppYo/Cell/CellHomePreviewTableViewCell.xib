@@ -11,18 +11,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" restorationIdentifier="CellHomePreviewTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellHomePreviewTableViewCell" rowHeight="315" id="KGk-i7-Jjw" customClass="CellHomePreviewTableViewCell" customModule="AppPt" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="239" height="315"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="CellHomePreviewTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellHomePreviewTableViewCell" rowHeight="698" id="KGk-i7-Jjw" customClass="CellHomePreviewTableViewCell" customModule="AppYo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="279" height="698"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="239" height="315"/>
+                <rect key="frame" x="0.0" y="0.0" width="279" height="698"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bek-iL-X95" userLabel="ViewBG">
-                        <rect key="frame" x="10" y="10" width="219" height="305"/>
+                        <rect key="frame" x="10" y="10" width="259" height="688"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A9F-8L-lKp" userLabel="ViewTitle">
-                                <rect key="frame" x="0.0" y="0.0" width="219" height="32"/>
+                                <rect key="frame" x="0.0" y="0.0" width="259" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzZ-mg-pfp">
                                         <rect key="frame" x="0.0" y="7" width="37.333333333333336" height="18"/>
@@ -31,7 +31,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KlS-xh-lDU">
-                                        <rect key="frame" x="173" y="0.0" width="46" height="32"/>
+                                        <rect key="frame" x="213" y="0.0" width="46" height="32"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
@@ -51,15 +51,18 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nat-Ly-G2v">
-                                <rect key="frame" x="0.0" y="40.000000000000007" width="219" height="109.66666666666669"/>
+                                <rect key="frame" x="0.0" y="40" width="259" height="129.66666666666666"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Nat-Ly-G2v" secondAttribute="height" multiplier="2/1" id="lsI-C8-0Eb"/>
                                 </constraints>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Gom-qx-D8Q">
-                                <rect key="frame" x="0.0" y="157.66666666666663" width="219" height="147.33333333333337"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Gom-qx-D8Q">
+                                <rect key="frame" x="0.0" y="177.66666666666666" width="259" height="460.33333333333337"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hPk-Uz-BGd">
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Gom-qx-D8Q" secondAttribute="height" multiplier="9/16" id="VdM-ab-eT3"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Hyh-62-gEe">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -73,9 +76,9 @@
                             <constraint firstItem="Nat-Ly-G2v" firstAttribute="leading" secondItem="bek-iL-X95" secondAttribute="leading" id="DeR-Sg-Zyb"/>
                             <constraint firstItem="A9F-8L-lKp" firstAttribute="leading" secondItem="bek-iL-X95" secondAttribute="leading" id="KrP-qF-a3M"/>
                             <constraint firstAttribute="trailing" secondItem="A9F-8L-lKp" secondAttribute="trailing" id="Olf-7X-q3A"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Gom-qx-D8Q" secondAttribute="bottom" id="Vzj-4q-Nno"/>
                             <constraint firstItem="Nat-Ly-G2v" firstAttribute="top" secondItem="A9F-8L-lKp" secondAttribute="bottom" constant="8" id="Yex-L0-Vhm"/>
                             <constraint firstAttribute="trailing" secondItem="Nat-Ly-G2v" secondAttribute="trailing" id="Zwj-Ub-8Ed"/>
-                            <constraint firstAttribute="bottom" secondItem="Gom-qx-D8Q" secondAttribute="bottom" id="cVZ-Y5-Zfi"/>
                             <constraint firstItem="Gom-qx-D8Q" firstAttribute="leading" secondItem="bek-iL-X95" secondAttribute="leading" id="ihT-Oh-teT"/>
                             <constraint firstItem="Gom-qx-D8Q" firstAttribute="top" secondItem="Nat-Ly-G2v" secondAttribute="bottom" constant="8" id="loi-y9-nbg"/>
                             <constraint firstAttribute="trailing" secondItem="Gom-qx-D8Q" secondAttribute="trailing" id="qWd-Al-C9W"/>
@@ -95,9 +98,10 @@
                 <outlet property="btnXemThem" destination="KlS-xh-lDU" id="ldl-1K-71c"/>
                 <outlet property="collectionView" destination="Gom-qx-D8Q" id="lQi-cS-q1E"/>
                 <outlet property="imageV" destination="Nat-Ly-G2v" id="i5j-oI-qEi"/>
+                <outlet property="tiLe" destination="VdM-ab-eT3" id="Oz3-tg-35p"/>
                 <outlet property="titleView" destination="uzZ-mg-pfp" id="xbA-hL-bcS"/>
             </connections>
-            <point key="canvasLocation" x="472.51908396946561" y="20.774647887323944"/>
+            <point key="canvasLocation" x="503.05343511450377" y="154.22535211267606"/>
         </tableViewCell>
     </objects>
     <resources>

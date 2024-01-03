@@ -13,12 +13,14 @@ class CellHomePreviewTableViewCell: UITableViewCell {
     @IBOutlet weak var btnXemThem: UIButton!
     @IBOutlet weak var imageV: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var tiLe: NSLayoutConstraint!
     
     var listCollection: [ObjItemClother] = []
     var onClickXemThemClosure: (() -> ())?
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        tiLe.constant = SCREEN_WIDTH/(152 + (4*SCREEN_WIDTH)/9)
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "ItemClotherCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ItemClotherCollectionViewCell")
@@ -57,10 +59,10 @@ extension CellHomePreviewTableViewCell: UICollectionViewDataSource, UICollection
     }
     
     func setupItemCell() {
-        var layoutItem: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layoutItem.minimumLineSpacing = 0
+        let layoutItem: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layoutItem.minimumLineSpacing = 4
         layoutItem.minimumInteritemSpacing = 0
-        layoutItem.itemSize = CGSize(width: 90, height: 160)
+        layoutItem.itemSize = CGSize(width: SCREEN_WIDTH/3, height: (152 + (4*SCREEN_WIDTH)/9))
         layoutItem.scrollDirection = .horizontal
         collectionView.setCollectionViewLayout(layoutItem, animated: true)
     }
