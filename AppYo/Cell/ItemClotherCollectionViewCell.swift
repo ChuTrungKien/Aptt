@@ -14,6 +14,8 @@ class ItemClotherCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var nameProduct: UILabel!
     @IBOutlet weak var giaKM: UILabel!
     @IBOutlet weak var giaGoc: UILabel!
+    @IBOutlet weak var view1: UIView!
+    @IBOutlet weak var view2: UIView!
     
     var onClickImgClosure: (() -> ())?
     
@@ -28,12 +30,14 @@ class ItemClotherCollectionViewCell: UICollectionViewCell {
 
     func bindData(obj: ObjItemClother) {
         imageView.image = UIImage(named: obj.imgStr)
-        giaGoc.text = "\(obj.price)"
+        giaGoc.text = "\((obj.price).formatNumberInt())" + "đ"
+        
         if (obj.sale > 0) {
             giaKM.isHidden = false
-            giaGoc.textColor = .darkGray
+            giaGoc.textColor = .lightGray
             let giaSauSale: Int = obj.price - obj.price*(obj.sale)/100
-            giaKM.text = "\(giaSauSale)"
+            giaKM.text = "\((giaSauSale).formatNumberInt())" + "đ"
+            strikeThroughText(label: giaGoc)
         }
     }
 }
@@ -69,6 +73,8 @@ extension ItemClotherCollectionViewCell: UICollectionViewDelegate, UICollectionV
     }
     
     func setupView() {
+        view1.isHidden = true
+        view2.isHidden = true
         giaKM.isHidden = true
         giaGoc.textColor = .black
         let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(TapImaged))
@@ -77,5 +83,11 @@ extension ItemClotherCollectionViewCell: UICollectionViewDelegate, UICollectionV
     
     @objc func TapImaged() {
         onClickImgClosure?()
+    }
+    
+    func strikeThroughText(label: UILabel) {
+        let attributedString = NSMutableAttributedString(string: label.text ?? "")
+        attributedString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributedString.length))
+        label.attributedText = attributedString
     }
 }
