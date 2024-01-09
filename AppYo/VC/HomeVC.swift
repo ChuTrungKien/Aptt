@@ -20,7 +20,7 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UINib(nibName: "CellHomePreviewTableViewCell", bundle: nil), forCellReuseIdentifier: "CellHomePreviewTableViewCell")
+        tableView.registerCells(cells: [CellHomePreviewTableViewCell.className])
     }
 }
 
@@ -34,13 +34,17 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CellHomePreviewTableViewCell", for: indexPath) as? CellHomePreviewTableViewCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CellHomePreviewTableViewCell.className, for: indexPath) as? CellHomePreviewTableViewCell
             else { return UITableViewCell() }
         let item = listBST[indexPath.row]
         for it in listItemClother {
             if (item.idList.first == it.id) {
                 self.obj = it
             }
+        }
+        cell.onClickPushVCClosure = { [weak self] in
+            guard let self = self else { return }
+            self.pushVC(vc: DetailProductVC())
         }
         cell.bindData(obj_1: item, obj_2: obj)
         return cell

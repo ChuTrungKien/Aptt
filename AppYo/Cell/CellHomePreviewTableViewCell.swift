@@ -17,6 +17,7 @@ class CellHomePreviewTableViewCell: UITableViewCell {
     
     var listCollection: [ObjItemClother] = []
     var onClickXemThemClosure: (() -> ())?
+    var onClickPushVCClosure: (() -> ())?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -56,6 +57,10 @@ extension CellHomePreviewTableViewCell: UICollectionViewDataSource, UICollection
         else { return UICollectionViewCell() }
         cell.bindData(obj: listCollection[indexPath.row])
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.onClickPushVCClosure?()
     }
     
     func setupItemCell() {
