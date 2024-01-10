@@ -32,6 +32,8 @@
 		E0AB77DF2B3940B70002977C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AB77DE2B3940B70002977C /* SceneDelegate.swift */; };
 		E0AB77E62B3940B70002977C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0AB77E52B3940B70002977C /* Assets.xcassets */; };
 		E0AB77E92B3940B70002977C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0AB77E72B3940B70002977C /* LaunchScreen.storyboard */; };
+		E0BC428F2B4E425100007E49 /* color.json in Resources */ = {isa = PBXBuildFile; fileRef = E0BC428E2B4E425100007E49 /* color.json */; };
+		E0BC42912B4E426400007E49 /* size.json in Resources */ = {isa = PBXBuildFile; fileRef = E0BC42902B4E426400007E49 /* size.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		E0AB77E52B3940B70002977C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0AB77E82B3940B70002977C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0AB77EA2B3940B70002977C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0BC428E2B4E425100007E49 /* color.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = color.json; sourceTree = "<group>"; };
+		E0BC42902B4E426400007E49 /* size.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = size.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,8 @@
 			children = (
 				E033D0D22B440B880063C922 /* motItemClother.json */,
 				E033D0D32B440B880063C922 /* motBoST.json */,
+				E0BC428E2B4E425100007E49 /* color.json */,
+				E0BC42902B4E426400007E49 /* size.json */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -262,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E033D0E32B466C380063C922 /* DetailProductVC.xib in Resources */,
+				E0BC42912B4E426400007E49 /* size.json in Resources */,
 				E0AB77E92B3940B70002977C /* LaunchScreen.storyboard in Resources */,
 				E0AB77E62B3940B70002977C /* Assets.xcassets in Resources */,
 				E033D0D52B440B880063C922 /* motBoST.json in Resources */,
@@ -270,6 +277,7 @@
 				E033D0D42B440B880063C922 /* motItemClother.json in Resources */,
 				E033D0E82B4671320063C922 /* CellDetailProductTableViewCell.xib in Resources */,
 				E033D0D92B440B910063C922 /* HomeVC.xib in Resources */,
+				E0BC428F2B4E425100007E49 /* color.json in Resources */,
 				E033D0D02B440B700063C922 /* ItemClotherCollectionViewCell.xib in Resources */,
 				E033D0CB2B440B700063C922 /* ItemCircleCollectionViewCell.xib in Resources */,
 			);

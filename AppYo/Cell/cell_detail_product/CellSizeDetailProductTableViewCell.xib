@@ -243,6 +243,9 @@
                                                 <state key="normal" title="Thêm vào giỏ hàng">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="actionThemVaoGioHang:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VWd-kQ-7iJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -302,6 +305,9 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="ic_minus"/>
+                                <connections>
+                                    <action selector="actionBoSP:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vK3-fp-uGk"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Or-Vb-3ai">
                                 <rect key="frame" x="184.66666666666666" y="11.999999999999998" width="19" height="20.333333333333329"/>
@@ -319,6 +325,9 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="ic_plus"/>
+                                <connections>
+                                    <action selector="actionThemSP:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="MEB-Yi-OiL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -354,7 +363,13 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="button" destination="okq-Bo-94s" id="GjN-io-l4z"/>
+                <outlet property="collectionViewColor" destination="hBA-bw-lg6" id="UEJ-AM-WhT"/>
+                <outlet property="collectionViewSize" destination="oAi-fo-wAa" id="awK-Ii-EsB"/>
                 <outlet property="heightViewChonSize" destination="lia-Rw-GED" id="K6r-vT-Hrm"/>
+                <outlet property="labelCanNang" destination="1a2-Qz-fbX" id="Bg8-oR-z6g"/>
+                <outlet property="labelChieuCao" destination="gXd-Eg-Ig0" id="6zy-G8-cfm"/>
+                <outlet property="sizeShopChon" destination="KyU-Q7-wJf" id="DKK-HU-yET"/>
+                <outlet property="soLuongSP" destination="3Or-Vb-3ai" id="wLZ-EA-BeD"/>
                 <outlet property="viewSize" destination="wJD-Oy-Uo5" id="Q2f-iD-bVP"/>
             </connections>
             <point key="canvasLocation" x="44.274809160305338" y="84.154929577464799"/>

@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "color": "Xanh nhạt",
+        "imgThumb": "ao_circle",
+        "imgBig": "item_Ao",
+    },
+    {
+        "id": 2,
+        "color": "Đỏ",
+        "imgThumb": "ao_circle",
+        "imgBig": "item_Ao",
+    },
+    {
+        "id": 3,
+        "color": "Trắng",
+        "imgThumb": "ao_circle",
+        "imgBig": "item_Ao",
+    },
+    {
+        "id": 4,
+        "color": "Navi",
+        "imgThumb": "ao_circle",
+        "imgBig": "item_Ao",
+    },
+    {
+        "id": 5,
+        "color": "Cam",
+        "imgThumb": "ao_circle",
+        "imgBig": "item_Ao",
+    },
+    {
+        "id": 6,
+        "color": "Đen",
+        "imgThumb": "ao_circle",
+        "imgBig": "item_Ao",
+    }
+]
