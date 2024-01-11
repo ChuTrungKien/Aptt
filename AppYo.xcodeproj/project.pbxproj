@@ -34,6 +34,8 @@
 		E0AB77E92B3940B70002977C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0AB77E72B3940B70002977C /* LaunchScreen.storyboard */; };
 		E0BC428F2B4E425100007E49 /* color.json in Resources */ = {isa = PBXBuildFile; fileRef = E0BC428E2B4E425100007E49 /* color.json */; };
 		E0BC42912B4E426400007E49 /* size.json in Resources */ = {isa = PBXBuildFile; fileRef = E0BC42902B4E426400007E49 /* size.json */; };
+		E0BC42942B4FD9F400007E49 /* CellSizeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BC42922B4FD9F400007E49 /* CellSizeCollectionViewCell.swift */; };
+		E0BC42952B4FD9F400007E49 /* CellSizeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0BC42932B4FD9F400007E49 /* CellSizeCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		E0AB77EA2B3940B70002977C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0BC428E2B4E425100007E49 /* color.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = color.json; sourceTree = "<group>"; };
 		E0BC42902B4E426400007E49 /* size.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = size.json; sourceTree = "<group>"; };
+		E0BC42922B4FD9F400007E49 /* CellSizeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSizeCollectionViewCell.swift; sourceTree = "<group>"; };
+		E0BC42932B4FD9F400007E49 /* CellSizeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellSizeCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,8 @@
 				E033D0E62B4671320063C922 /* CellDetailProductTableViewCell.xib */,
 				E033D0E92B480AA70063C922 /* CellSizeDetailProductTableViewCell.swift */,
 				E033D0EA2B480AA70063C922 /* CellSizeDetailProductTableViewCell.xib */,
+				E0BC42922B4FD9F400007E49 /* CellSizeCollectionViewCell.swift */,
+				E0BC42932B4FD9F400007E49 /* CellSizeCollectionViewCell.xib */,
 			);
 			path = cell_detail_product;
 			sourceTree = "<group>";
@@ -268,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E033D0E32B466C380063C922 /* DetailProductVC.xib in Resources */,
+				E0BC42952B4FD9F400007E49 /* CellSizeCollectionViewCell.xib in Resources */,
 				E0BC42912B4E426400007E49 /* size.json in Resources */,
 				E0AB77E92B3940B70002977C /* LaunchScreen.storyboard in Resources */,
 				E0AB77E62B3940B70002977C /* Assets.xcassets in Resources */,
@@ -338,6 +345,7 @@
 				E033D0DA2B440B910063C922 /* HomeVC.swift in Sources */,
 				E033D0C22B440B610063C922 /* ObjItemClother.swift in Sources */,
 				E033D0DC2B45767F0063C922 /* General.swift in Sources */,
+				E0BC42942B4FD9F400007E49 /* CellSizeCollectionViewCell.swift in Sources */,
 				E033D0CF2B440B700063C922 /* ItemCircleCollectionViewCell.swift in Sources */,
 				E033D0E22B466C380063C922 /* DetailProductVC.swift in Sources */,
 				E0AB77DD2B3940B70002977C /* AppDelegate.swift in Sources */,

@@ -13,6 +13,19 @@ class DetailProductVC: UIViewController {
     
     let listType: [TypeDetailProduct] = [.ImageSP, .SizeSP]
     var isClick: Bool = false
+    var obj: ObjItemClother = ObjItemClother()
+    var listSize: [ObjSize] = []
+    var colorInit: ObjColor = ObjColor()
+    
+//    init(obj: ObjItemClother) {
+//        super.init(nibName: DetailProductVC.className, bundle: nil)
+//        self.obj = obj
+//        listSize = Utility.returnListSize(sizes: obj.size, list: Utility.getListSize())
+//    }
+    
+//    required init?(coder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

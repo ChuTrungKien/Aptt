@@ -59,4 +59,26 @@ public class Utility {
         }
         return []
     }
+    
+    static func returnListSize(sizes: [Int], list: [ObjSize]) -> [ObjSize] {
+        var listR: [ObjSize] = []
+        for s in sizes {
+            for item in list {
+                if (item.id == s) {
+                    listR.append(item)
+                }
+            }
+        }
+        return listR
+    }
+    
+    static func getAColor(id: Int, list: [ObjColor]) -> ObjColor {
+        var obj: ObjColor = ObjColor()
+        for item in list {
+            if (item.id == id) {
+                obj = item
+            }
+        }
+        return obj
+    }
 }

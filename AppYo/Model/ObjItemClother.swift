@@ -16,6 +16,8 @@ class ObjItemClother: Mappable {
     var sale: Int = 0
     var numberSale: Int = 0
     var rate: Double = 0
+    var size: [Int] = []
+    var colors: [ObjColors] = []
     
     init() {}
     
@@ -31,6 +33,8 @@ class ObjItemClother: Mappable {
         sale <- map["sale"]
         numberSale <- map["numberSale"]
         rate <- map["rate"]
+        size <- map["size"]
+        colors <- map["colors"]
     }
 }
 
@@ -75,7 +79,6 @@ class ObjColor: Mappable {
     var color: String = ""
     var imgThumb: String = ""
     var imgBig: String = ""
-    var size: [Int] = []
     
     init() {}
     
@@ -88,14 +91,12 @@ class ObjColor: Mappable {
         color <- map["color"]
         imgThumb <- map["imgThumb"]
         imgBig <- map["imgBig"]
-        size <- map["size"]
     }
 }
 
 class ObjSize: Mappable {
     var id: Int = 0
     var size: String = ""
-    var daHetSize: Int = 0
     
     init() {}
     
@@ -106,7 +107,22 @@ class ObjSize: Mappable {
     func mapping(map: Map) {
         id <- map["id"]
         size <- map["size"]
-        daHetSize <- map["daHetSize"]
+    }
+}
+
+class ObjColors: Mappable {
+    var id: Int = 0
+    var sizeHet: [Int] = []
+    
+    init() {}
+    
+    required init(map: Map) {
+        mapping(map: map)
+    }
+    
+    func mapping(map: Map) {
+        id <- map["id"]
+        sizeHet <- map["size"]
     }
 }
 

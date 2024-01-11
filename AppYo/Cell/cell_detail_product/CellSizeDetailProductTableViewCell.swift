@@ -24,17 +24,19 @@ class CellSizeDetailProductTableViewCell: UITableViewCell {
     var listSizeNeeds: [ObjSize] = []
     var soLuong: Int = 0
     
-    let listColor: [ObjColor] = Utility.getListColor()
-    let listSize: [ObjSize] = Utility.getListSize()
+    var listColor: [ObjColor] = []
+    var listSize: [ObjSize] = []
     
     override func awakeFromNib() {
         super.awakeFromNib()
         button.setBorder()
         
-        collectionViewColor.dataSource = self
-        collectionViewColor.delegate = self
-        collectionViewSize.dataSource = self
-        collectionViewSize.delegate = self
+//        collectionViewColor.dataSource = self
+//        collectionViewColor.delegate = self
+//        collectionViewSize.dataSource = self
+//        collectionViewSize.delegate = self
+        
+        //collectionViewSize.register(UINib(nibName: "CellSizeCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CellSizeCollectionViewCell")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -88,9 +90,23 @@ extension CellSizeDetailProductTableViewCell: UICollectionViewDataSource, UIColl
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if (collectionView == self.collectionViewSize) {
+//            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CellSizeCollectionViewCell", for: indexPath) as? CellSizeCollectionViewCell else { return UICollectionViewCell()}
+//            cell.bindData(lb: listSize[indexPath.row].size)
+//            return cell
             return UICollectionViewCell()
         } else {
             return UICollectionViewCell()
         }
     }
+    
+//    func setUpItem() {
+//        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+//        layout.minimumLineSpacing = 0
+//        layout.minimumInteritemSpacing = 0
+//        layout.scrollDirection = .horizontal
+//        layout.itemSize = CGSize(width: 40, height: 40)
+//        
+//        collectionViewSize.setCollectionViewLayout(layout, animated: true)
+//        collectionViewColor.setCollectionViewLayout(layout, animated: true)
+//    }
 }

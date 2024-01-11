@@ -42,7 +42,7 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
                 self.obj = it
             }
         }
-        cell.onClickPushVCClosure = { [weak self] in
+        cell.onClickPushVCClosure = { [weak self] index in
             guard let self = self else { return }
             self.pushVC(vc: DetailProductVC())
         }
