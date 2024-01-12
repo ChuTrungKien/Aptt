@@ -15,17 +15,19 @@ class DetailProductVC: UIViewController {
     var isClick: Bool = false
     var obj: ObjItemClother = ObjItemClother()
     var listSize: [ObjSize] = []
+    var listColor: [ObjColor] = []
     var colorInit: ObjColor = ObjColor()
     
-//    init(obj: ObjItemClother) {
-//        super.init(nibName: DetailProductVC.className, bundle: nil)
-//        self.obj = obj
-//        listSize = Utility.returnListSize(sizes: obj.size, list: Utility.getListSize())
-//    }
+    init(obj: ObjItemClother) {
+        super.init(nibName: DetailProductVC.className, bundle: nil)
+        self.obj = obj
+        listSize = Utility.returnListSize(sizes: obj.size, list: Utility.getListSize())
+        
+    }
     
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +60,7 @@ extension DetailProductVC: UITableViewDataSource, UITableViewDelegate {
                 self.isClick = !isClick
                 self.tableView.reloadData()
             }
-            cell.bindData(isClick: isClick)
+            cell.bindData(isClick: isClick, lSize: listSize)
             return cell
         default:
             return UITableViewCell()
@@ -76,3 +78,4 @@ enum TypeDetailProduct {
     case Adress
     case Transport
 }
+

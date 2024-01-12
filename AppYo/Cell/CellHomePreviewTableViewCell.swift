@@ -40,6 +40,7 @@ class CellHomePreviewTableViewCell: UITableViewCell {
         titleView.text = obj_1.nameBST
         imageV.image = UIImage(named: obj_1.banner)
         self.listCollection = obj_2.collection
+        self.collectionView.reloadData()
     }
 }
 

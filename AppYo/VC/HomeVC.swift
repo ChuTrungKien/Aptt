@@ -44,7 +44,7 @@ extension HomeVC: UITableViewDataSource, UITableViewDelegate {
         }
         cell.onClickPushVCClosure = { [weak self] index in
             guard let self = self else { return }
-            self.pushVC(vc: DetailProductVC())
+            self.pushVC(vc: DetailProductVC(obj: obj.collection[index]))
         }
         cell.bindData(obj_1: item, obj_2: obj)
         return cell
