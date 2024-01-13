@@ -122,8 +122,7 @@ class ObjColors: Mappable {
     
     func mapping(map: Map) {
         id <- map["id"]
-        sizeHet <- map["size"]
+        sizeHet <- map["sizeHet"]
     }
 }
-
 

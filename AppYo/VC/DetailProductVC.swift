@@ -15,14 +15,15 @@ class DetailProductVC: UIViewController {
     var isClick: Bool = false
     var obj: ObjItemClother = ObjItemClother()
     var listSize: [ObjSize] = []
-    var listColor: [ObjColor] = []
-    var colorInit: ObjColor = ObjColor()
+    var listColor: [ObjColors] = []
+    var colorInit: [ObjColor] = []
     
     init(obj: ObjItemClother) {
         super.init(nibName: DetailProductVC.className, bundle: nil)
         self.obj = obj
         listSize = Utility.returnListSize(sizes: obj.size, list: Utility.getListSize())
-        
+        listColor = obj.colors
+        colorInit = Utility.returnListColor(ids: listColor, list: Utility.getListColor())
     }
     
     required init?(coder: NSCoder) {
@@ -52,6 +53,10 @@ extension DetailProductVC: UITableViewDataSource, UITableViewDelegate {
         switch type {
         case .ImageSP:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellDetailProductTableViewCell.className, for: indexPath) as? CellDetailProductTableViewCell else { return UITableViewCell() }
+            cell.onClickColorClosure = { [weak self] index in
+                guard let self = self else { return }
+            }
+            cell.bindData(lColor: listColor)
             return cell
         case .SizeSP:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellSizeDetailProductTableViewCell.className, for: indexPath) as? CellSizeDetailProductTableViewCell else { return UITableViewCell() }

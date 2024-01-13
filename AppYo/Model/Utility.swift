@@ -72,13 +72,15 @@ public class Utility {
         return listR
     }
     
-    static func getAColor(id: Int, list: [ObjColor]) -> ObjColor {
-        var obj: ObjColor = ObjColor()
-        for item in list {
-            if (item.id == id) {
-                obj = item
+    static func returnListColor(ids: [ObjColors], list: [ObjColor]) -> [ObjColor] {
+        var objs: [ObjColor] = []
+        for id in ids {
+            for item in list {
+                if (id.id == item.id) {
+                    objs.append(item)
+                }
             }
         }
-        return obj
+        return objs
     }
 }
