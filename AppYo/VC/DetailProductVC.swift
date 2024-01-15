@@ -16,14 +16,17 @@ class DetailProductVC: UIViewController {
     var obj: ObjItemClother = ObjItemClother()
     var listSize: [ObjSize] = []
     var listColor: [ObjColors] = []
-    var colorInit: [ObjColor] = []
+    var objColorSizes: [ObjColorSize] = []
     
     init(obj: ObjItemClother) {
         super.init(nibName: DetailProductVC.className, bundle: nil)
         self.obj = obj
         listSize = Utility.returnListSize(sizes: obj.size, list: Utility.getListSize())
         listColor = obj.colors
-        colorInit = Utility.returnListColor(ids: listColor, list: Utility.getListColor())
+        for item in listColor {
+            objColorSizes.append(ObjColorSize(color: item.returnColor(), listSize: Utility.returnListSize(sizes: item.sizeHet, list: Utility.getListSize())))
+        }
+        objColorSizes.first?.color.isChon = true
     }
     
     required init?(coder: NSCoder) {
@@ -53,10 +56,12 @@ extension DetailProductVC: UITableViewDataSource, UITableViewDelegate {
         switch type {
         case .ImageSP:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellDetailProductTableViewCell.className, for: indexPath) as? CellDetailProductTableViewCell else { return UITableViewCell() }
-            cell.onClickColorClosure = { [weak self] index in
+            cell.onClickColorClosure = { [weak self] (colorSize, index) in
                 guard let self = self else { return }
+                self.objColorSizes[index].color = colorSize
+                self.tableView.reloadData()
             }
-            cell.bindData(lColor: listColor)
+            cell.bindData(lColorSize: objColorSizes)
             return cell
         case .SizeSP:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellSizeDetailProductTableViewCell.className, for: indexPath) as? CellSizeDetailProductTableViewCell else { return UITableViewCell() }

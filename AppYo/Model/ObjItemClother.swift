@@ -79,6 +79,7 @@ class ObjColor: Mappable {
     var color: String = ""
     var imgThumb: String = ""
     var imgBig: String = ""
+    var isChon: Bool = false
     
     init() {}
     
@@ -123,6 +124,28 @@ class ObjColors: Mappable {
     func mapping(map: Map) {
         id <- map["id"]
         sizeHet <- map["sizeHet"]
+    }
+    
+    func returnColor() -> ObjColor {
+        var col: ObjColor = ObjColor()
+        for it in (Utility.getListColor()) {
+            if (it.id == self.id) {
+                col = it
+            }
+        }
+        return col
+    }
+}
+
+class ObjColorSize {
+    var color: ObjColor = ObjColor()
+    var listSize: [ObjSize] = []
+    
+    init() {}
+    
+    init(color: ObjColor, listSize: [ObjSize]) {
+        self.color = color
+        self.listSize = listSize
     }
 }
 

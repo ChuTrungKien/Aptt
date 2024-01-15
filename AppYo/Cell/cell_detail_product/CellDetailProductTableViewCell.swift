@@ -9,11 +9,12 @@ import UIKit
 
 class CellDetailProductTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var nameColor: UILabel!
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var collectionViewColor: UICollectionView!
     
-    var listColor: [ObjColors] = []
-    var onClickColorClosure: ((Int) -> ())?
+    var listColor: [ObjColorSize] = []
+    var onClickColorClosure: ((ObjColor, Int) -> ())?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,8 +29,13 @@ class CellDetailProductTableViewCell: UITableViewCell {
         //super.setSelected(selected, animated: animated)
     }
     
-    func bindData(lColor: [ObjColors]) {
-        self.listColor = lColor
+    func bindData(lColorSize: [ObjColorSize]) {
+        self.listColor = lColorSize
+        for item in lColorSize {
+            if (item.color.isChon) {
+                nameColor.text = item.color.color
+            }
+        }
         self.collectionViewColor.reloadData()
     }
 }
@@ -49,12 +55,19 @@ extension CellDetailProductTableViewCell: UICollectionViewDataSource, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        onClickColorClosure?(indexPath.row)
+        let colSize: ObjColorSize = listColor[indexPath.row]
+        colSize.color.isChon = true
+        for i in 0..<(listColor.count) {
+            if (i != indexPath.row) {
+                listColor[i].color.isChon = false
+            }
+        }
+        onClickColorClosure?(colSize.color, indexPath.row)
     }
     
     func setupItem() {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.minimumLineSpacing = 0
+        layout.minimumLineSpacing = 10
         layout.minimumInteritemSpacing = 0
         layout.scrollDirection = .horizontal
         layout.itemSize = CGSize(width: 40, height: 40)

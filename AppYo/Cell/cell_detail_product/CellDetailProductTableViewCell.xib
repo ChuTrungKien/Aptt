@@ -168,6 +168,7 @@
             <connections>
                 <outlet property="collectionViewColor" destination="QCT-82-6Fz" id="MBW-DI-NFe"/>
                 <outlet property="imgView" destination="Bsa-Px-Vod" id="Ha2-VV-tLU"/>
+                <outlet property="nameColor" destination="yfF-jH-zYW" id="Flp-R2-a4Q"/>
             </connections>
             <point key="canvasLocation" x="6.8702290076335872" y="-82.042253521126767"/>
         </tableViewCell>
