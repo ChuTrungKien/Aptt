@@ -173,8 +173,8 @@
 				E033D0E62B4671320063C922 /* CellDetailProductTableViewCell.xib */,
 				E033D0E92B480AA70063C922 /* CellSizeDetailProductTableViewCell.swift */,
 				E033D0EA2B480AA70063C922 /* CellSizeDetailProductTableViewCell.xib */,
-				E0BC42922B4FD9F400007E49 /* CellSizeCollectionViewCell.swift */,
 				E0BC42932B4FD9F400007E49 /* CellSizeCollectionViewCell.xib */,
+				E0BC42922B4FD9F400007E49 /* CellSizeCollectionViewCell.swift */,
 			);
 			path = cell_detail_product;
 			sourceTree = "<group>";

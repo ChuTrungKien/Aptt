@@ -149,3 +149,20 @@ class ObjColorSize {
     }
 }
 
+class ObjBSTCollect {
+    var bst: ObjMotBST = ObjMotBST()
+    var collect: [ObjItemClother] = []
+    
+    init() {}
+    
+    func returnObjItemClother(index: Int) -> ObjItemClother {
+        var ob: ObjItemClother = ObjItemClother()
+        for i in 0..<(collect.count) {
+            if (index == i) {
+                ob = collect[index]
+            }
+        }
+        return ob
+    }
+}
+
