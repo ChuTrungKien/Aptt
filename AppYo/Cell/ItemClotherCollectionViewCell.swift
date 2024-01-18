@@ -29,6 +29,7 @@ class ItemClotherCollectionViewCell: UICollectionViewCell {
     }
 
     func bindData(obj: ObjItemClother) {
+        nameProduct.text = obj.nameSP
         imageView.image = UIImage(named: obj.imgStr)
         giaGoc.text = "\((obj.price).formatNumberInt())" + "đ"
         

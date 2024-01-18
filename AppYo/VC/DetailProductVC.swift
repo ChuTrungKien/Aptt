@@ -61,7 +61,7 @@ extension DetailProductVC: UITableViewDataSource, UITableViewDelegate {
                 self.objColorSizes[index].color = colorSize
                 self.tableView.reloadData()
             }
-            cell.bindData(lColorSize: objColorSizes)
+            cell.bindData(lColorSize: objColorSizes, obj: obj)
             return cell
         case .SizeSP:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: CellSizeDetailProductTableViewCell.className, for: indexPath) as? CellSizeDetailProductTableViewCell else { return UITableViewCell() }

@@ -17,7 +17,7 @@ class CellHomePreviewTableViewCell: UITableViewCell {
     
     var listCollection: [ObjItemClother] = []
     var onClickXemThemClosure: (() -> ())?
-    var onClickPushVCClosure: ((Int) -> ())?
+    var onClickPushVCClosure: ((ObjItemClother) -> ())?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -54,14 +54,16 @@ extension CellHomePreviewTableViewCell: UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ItemClotherCollectionViewCell", for: indexPath) as? ItemClotherCollectionViewCell
+        guard let item = listCollection.itemAtIndex(index: indexPath.row),
+              let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ItemClotherCollectionViewCell", for: indexPath) as? ItemClotherCollectionViewCell
         else { return UICollectionViewCell() }
-        cell.bindData(obj: listCollection[indexPath.row])
+        cell.bindData(obj: item)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.onClickPushVCClosure?(indexPath.row)
+        guard let item = listCollection.itemAtIndex(index: indexPath.row) else { return }
+        self.onClickPushVCClosure?(item)
     }
     
     func setupItemCell() {

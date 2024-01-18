@@ -12,7 +12,9 @@ class CellDetailProductTableViewCell: UITableViewCell {
     @IBOutlet weak var nameColor: UILabel!
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var collectionViewColor: UICollectionView!
+    @IBOutlet weak var nameSP: UILabel!
     
+    var obj: ObjItemClother = ObjItemClother()
     var listColor: [ObjColorSize] = []
     var onClickColorClosure: ((ObjColor, Int) -> ())?
     
@@ -29,8 +31,9 @@ class CellDetailProductTableViewCell: UITableViewCell {
         //super.setSelected(selected, animated: animated)
     }
     
-    func bindData(lColorSize: [ObjColorSize]) {
+    func bindData(lColorSize: [ObjColorSize], obj: ObjItemClother) {
         self.listColor = lColorSize
+        nameSP.text = obj.nameSP
         for item in lColorSize {
             if (item.color.isChon) {
                 nameColor.text = item.color.color
