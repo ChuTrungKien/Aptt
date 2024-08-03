@@ -36,6 +36,10 @@
 		E0BC42912B4E426400007E49 /* size.json in Resources */ = {isa = PBXBuildFile; fileRef = E0BC42902B4E426400007E49 /* size.json */; };
 		E0BC42942B4FD9F400007E49 /* CellSizeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0BC42922B4FD9F400007E49 /* CellSizeCollectionViewCell.swift */; };
 		E0BC42952B4FD9F400007E49 /* CellSizeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0BC42932B4FD9F400007E49 /* CellSizeCollectionViewCell.xib */; };
+		E0D1F0512C5DF11700F2F7AA /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D1F04F2C5DF11700F2F7AA /* IntroVC.swift */; };
+		E0D1F0522C5DF11700F2F7AA /* IntroVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0D1F0502C5DF11700F2F7AA /* IntroVC.xib */; };
+		E0D1F0552C5DF61400F2F7AA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D1F0532C5DF61400F2F7AA /* LoginVC.swift */; };
+		E0D1F0562C5DF61400F2F7AA /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0D1F0542C5DF61400F2F7AA /* LoginVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +76,10 @@
 		E0BC42902B4E426400007E49 /* size.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = size.json; sourceTree = "<group>"; };
 		E0BC42922B4FD9F400007E49 /* CellSizeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSizeCollectionViewCell.swift; sourceTree = "<group>"; };
 		E0BC42932B4FD9F400007E49 /* CellSizeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellSizeCollectionViewCell.xib; sourceTree = "<group>"; };
+		E0D1F04F2C5DF11700F2F7AA /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
+		E0D1F0502C5DF11700F2F7AA /* IntroVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroVC.xib; sourceTree = "<group>"; };
+		E0D1F0532C5DF61400F2F7AA /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		E0D1F0542C5DF61400F2F7AA /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +162,10 @@
 				E033D0D82B440B910063C922 /* HomeVC.swift */,
 				E033D0E02B466C380063C922 /* DetailProductVC.swift */,
 				E033D0E12B466C380063C922 /* DetailProductVC.xib */,
+				E0D1F04F2C5DF11700F2F7AA /* IntroVC.swift */,
+				E0D1F0502C5DF11700F2F7AA /* IntroVC.xib */,
+				E0D1F0532C5DF61400F2F7AA /* LoginVC.swift */,
+				E0D1F0542C5DF61400F2F7AA /* LoginVC.xib */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -287,6 +299,8 @@
 				E0BC428F2B4E425100007E49 /* color.json in Resources */,
 				E033D0D02B440B700063C922 /* ItemClotherCollectionViewCell.xib in Resources */,
 				E033D0CB2B440B700063C922 /* ItemCircleCollectionViewCell.xib in Resources */,
+				E0D1F0562C5DF61400F2F7AA /* LoginVC.xib in Resources */,
+				E0D1F0522C5DF11700F2F7AA /* IntroVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,10 +358,12 @@
 				E033D0EB2B480AA70063C922 /* CellSizeDetailProductTableViewCell.swift in Sources */,
 				E033D0DA2B440B910063C922 /* HomeVC.swift in Sources */,
 				E033D0C22B440B610063C922 /* ObjItemClother.swift in Sources */,
+				E0D1F0512C5DF11700F2F7AA /* IntroVC.swift in Sources */,
 				E033D0DC2B45767F0063C922 /* General.swift in Sources */,
 				E0BC42942B4FD9F400007E49 /* CellSizeCollectionViewCell.swift in Sources */,
 				E033D0CF2B440B700063C922 /* ItemCircleCollectionViewCell.swift in Sources */,
 				E033D0E22B466C380063C922 /* DetailProductVC.swift in Sources */,
+				E0D1F0552C5DF61400F2F7AA /* LoginVC.swift in Sources */,
 				E0AB77DD2B3940B70002977C /* AppDelegate.swift in Sources */,
 				E033D0CE2B440B700063C922 /* CellHomePreviewTableViewCell.swift in Sources */,
 				E033D0CD2B440B700063C922 /* ItemClotherCollectionViewCell.swift in Sources */,
